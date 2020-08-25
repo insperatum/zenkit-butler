@@ -3,7 +3,7 @@
 from dotenv import load_dotenv
 load_dotenv()
 
-from .butler import api
+from butler import api
 
 if __name__ == "__main__":
     api.copy_all(api.get_stage("Daily"), api.get_stage("Today"))
